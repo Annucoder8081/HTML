@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <script src="js/jquery.js"></script>
+    <script>
+            $(document).ready(function(){
+            var arr=["Apple","Banana","Mango","Papaya","Orange"," grapes","Lichi","kela"];
+            for(var i=0;i<arr.length;i++){
+                var val=arr[i];
+                $("#list").append(`<option>${val}</option>`);
+            }
+               $("#list").change(function(){
+                var a=$("#list").val();
+                $("#txt").text("Your selected:"+a);
+               })
+             })
+
+    </script>
+</head>
+<body>
+       <h3 style="text-align: center";>Fruits Name</h3>
+       <select name="" id="list">
+        <option>Select Technologies</option>
+       </select>
+       
+       <span id="txt">
+
+       </span>
+</body>
+</html>
