@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            var num = parseInt($("#txtenter").val());
+             var square=num*num;
+            var sum=0;
+            while(square>0){
+                sum = sum+(square%10);
+                square = Math.floor(square/10);
+
+            }
+            if(sum==num){
+                $("#txt1").val(num +"this is neon number");
+            }else{
+                $("#txt1").val(num +"this is dont neon number");
+            }
+            
+        })
+    })
+</script>
+<body>
+    <div class="container-fluid" >
+        <h1  class="text text-info text-center text-capitalize">Example a neon number</h1>
+        <hr style="background-color:red;height: 5px;">
+        <div class="row">
+         <div class="col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text text-center">
+                <input type="text" id="txtenter" class="form-control" placeholder="enter number">
+                <br>
+                
+                <input type="text" id="txt1" class="form-control" placeholder="diplay result"><br>
+                <input type="button" class="btn btn-info" id="btn" value="check number">
+
+            </div>
+            <div class="col-sm-4"></div>
+         </div>
+        </div>
+    </div>
+    
+</body>
+</html>

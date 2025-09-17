@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="js/jquery.js"></script>
+      <script>
+                 var rev,rem,num;
+                 $(document).ready(function(){
+
+                $("#txt1").keyup(function(){
+                    rev=0;
+                    num=parseInt($("#txt1").val());//12345
+                    while(num!=0) //12345!=01234!=0 123!=0
+                    {
+                        rem=num%10;
+                        rev=rev*10+rem;
+                        num=parseInt(num/10);
+                    }
+
+                    $("#txt2").val(rev);
+                    
+                })        
+                     
+             })
+
+      </script>
+</head>
+<body>
+    <h1  class="text text-info text-center text-capitalize">Example of reverse number without click button</h1>
+    <hr style="background-color: gray;height: 5px;">
+    <div class="row">
+        <div class="col-sm-12">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"
+    style="box-shadow: 0px 0px 10px 0px forestgreen;padding: 3%;">
+     Enter string
+     <input type="text" class="form-control" id="txt1">
+     reverse string
+     <input type="text" class="form-control" id="txt2">
+     <br>
+     <!-- <input type="button" class=" btn btn-danger" id="btn" value="click" > -->
+    </div>
+     <div class="col-sm-4"></div>
+    </div>
+    </div>
+</body>
+</html>

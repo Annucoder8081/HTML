@@ -1,0 +1,145 @@
+HTML:
+----------
+
+1: html is hyper text markup language.
+2: this is used for create web page or website
+3: html divided into two section: first is head section  and second section body.
+4: html used tag.
+5: tags are that enclose angular bracket.
+html file save with html or html extension
+html developer by Tim Berner Lee in 1991
+
+head section:
+---------------
+
+there are 8 tag are in used in head section 
+title tag 
+style 
+script tag
+no script tag  
+base tag
+command
+link
+meta
+
+style tag: is used for internal CSS
+script tag: used for link JS page 
+no script: used for  check JavaScript enable or disable in browser.
+base tag : used for static web or link URL
+
+link tag: Links are found in nearly all web pages. Links allow users to click their way from page to page.
+
+types of tag:
+----------------
+
+1: self closing tag :
+--------------------   that tag are close itself are called self closing tag.
+2: container tag: that tags are contain nested tag are called container tag.
+-----------------
+
+tag.
+Ex:
+<tag_name prop1="value">................</tagname>
+
+Body section tags:
+--------------------
+
+There are many tags RE USED in body section
+
+Some important tags:
+-------------------------	
+1: Heading tag:
+Heading tags are used to implement in website.
+<h1>...........</h1>
+<h2>...........</h2>
+<h3>...........</h3>
+<h4>...........</h4>
+<h5>...........</h5>
+<h6>...........</h6>
+
+Text tags:
+----------- text tags are used to write text.
+Ex:
+
+<span>...........</span>
+<font>............</font>
+<p>...............</p>
+<lable>..........</lable>
+
+image tag:
+----------- image tag used for insert image.image tag is self closing tag.
+
+Ex:  <img scr="image_path"/>
+
+4: formating tags:
+----------------------
+
+<b>...............</b> bold
+<i>................</i> italic
+<u>................</u> undeline
+<em>.................</em> same like italic
+<strong>............</strong>... same like  bold tag
+
+List tag:
+----------
+
+Ordered  list : An ordered list starts with the <ol> tag. Each list item starts with the <li> tag. 
+------------- इसमें आइटम्स नंबरिंग के साथ आते हैं (1, 2, 3 या A, B, C)।
+
+इसे <ol> टैग से बनाया जाता है।
+
+ Unordered  last :An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+---------------  इसमें आइटम्स बुलेट (●) के साथ आते हैं।
+
+इसे <ul> टैग से बनाया जाता है।
+
+
+table:
+-------- combincation of row and column is called table 
+
+table tag property 
+1: border : uesd of definr table  border.
+2: height & width.
+3: bgcolor: bgcolorused for table background color.
+4: bordercolor: bordercolor used for table border color.
+5: cellspacing: used for cell outer sapce .
+6: cellpadding : it is used for cell inner sapce. 
+7: aline:  this tag used for  table posistion left right
+
+
+<thhead>  this tag used for table Heading.
+<th> : this tag used for Heading data .
+<tr> : this tag used for table row .
+<td>: this tag used for table data.
+<tbody></tbody>: this tag used for table body.
+<tfoot></tfoot>: this tag used for table footer.
+
+property: of <td>:
+------------------
+1: row span
+2: cal span
+
+from:  from tag used for user input 
+from tag property: enc types,
+action: action used for respone particuller page.
+method: method used for from data gets and post .
+Enc:  Used for file uplod
+
+
+property of input tag:
+
+
+?
+
+
+title: property  
+
+
+
+
+
+
+
+
+
+ 

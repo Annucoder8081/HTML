@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="js/jquery.js"></script>
+</head>
+<body>
+     
+    <script>
+         var tab="";
+         for(r=1;r<=10;r++) 
+         {
+            for(c=2;c<=20;c++)
+         {
+            tab=r*c; 
+            if(tab>0 && tab<=9)
+            document.write("__"+tab+" |");
+        else if(tab>=10 && tab<99)
+         document.write("_"+tab+"  |");
+        else
+              document.write(""+tab+"   |");
+         }
+          document.write("<br>");
+
+         }
+    </script> 
+</body>
+</html>

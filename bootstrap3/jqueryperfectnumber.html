@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spy number</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+          var num = parseInt($("#txtenter").val());
+          var sum=0,product=1,rem;
+          
+          while(num>0)
+          {
+                
+          }
+
+                if(sum==dprouct){
+            $("#txtresult").val("perfect number");
+          }else{
+            $("#txtresult").val("not perfect number");
+          }
+        })
+    })
+</script>
+<body>
+    
+    <div class="container-fluid" >
+        <h1 class="text text-info text-center text-capitalize" >Example a perfect number</h1>
+        <hr style="background-color: greenyellow; height: 5px;">
+       
+        <div class="row">
+         <div class="col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text text-center">
+                <input type="text" id="txtenter" class="form-control" placeholder="enter number"><br>
+                
+                <input type="text" id="txtresult" class="form-control" placeholder="diplay result"> <br>
+                <input type="button" class="btn btn-info" id="btn" value="check number">
+
+            </div>
+            <div class="col-sm-4"></div>
+         </div>
+        </div>
+    </div>
+    
+</body>
+</html>

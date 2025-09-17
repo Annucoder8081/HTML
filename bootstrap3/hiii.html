@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+   
+   
+    <script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        var day=($("#txt1").val());
+        
+        var year=(day/365).toFixed(2);
+        $("#txt2").val("year is"+year);
+        var month=(day/30).toFixed(2);
+        $("#txt3").val("month is"+month);
+        var h=day*24;
+        $("#txt4").val("hour is"+h);
+        var second=day*24*60*60;
+        $("#txt5").val("second is"+second);
+    })
+})
+
+    </script>
+    </head >
+    <body >
+ <div class="container-fluid" >
+        <div class="row" >
+            <div class="col-sm-12" ></div>
+             <div class="col-sm-4" ></div>
+            <div class="col-sm-4 panel panel-body">
+                 <h2 class="text text-info text-capitalize panel panel-heading" style="text-align: center;">day calculation</h2>
+                <hr style="border: 5px solid red;">
+                Day 
+                <input type="text"id="txt1"class="form-control" >
+                year
+                <input type="text"id="txt2"class="form-control">
+                month
+                <input type="text"id="txt3"class="form-control">
+                hour
+                <input type="text"id="txt4"class="form-control">
+                second
+                <input type="text"id="txt5"class="form-control"><br>
+                <input type="button"id="btn1"class="btn btn-danger">
+   </body>
+</html>

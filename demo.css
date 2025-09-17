@@ -1,0 +1,21 @@
+.dv{
+    height: 500px;
+    width: 500px;  
+  background-color: red;
+  display: inline-block;
+  
+}
+.div{
+    height: 500px;
+    width: 500px;  
+  background-color: green;
+   display: inline-block;
+    /* visibility: hidden;
+    */
+}
+#v{
+    height: 500px;
+    width: 500px;
+    background-color: yellow;
+   display: inline-block;
+}

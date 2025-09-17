@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <script src="/js/jquery.js"></script>
+    <style>
+        .fa-star{
+            font-size: 50px;
+            color: indigo;cursor: pointer;
+        }
+    </style>
+    <script>
+        var total="";
+        $(document).ready(function(){
+            $("#sp1,#sp2,#sp3,#sp4,#sp5").hide();
+            $("#s1").click(function(){
+                total=$ ("#sp1").text().
+                $("#s1").css("color","orangered")
+                $("#s2,#s3,#s4,#s5").css("color","indigo")
+                $("textarea").val(total)
+            })
+
+            $("#s2").click(function(){
+                total=$("#sp2").text().
+                 $("#s1,#s2").css("color","orangered")
+                   $("#s3,#s4,#s5").css("color","indigo")
+                $("textarea").val(total)
+
+            })
+                 $("#s3").click(function(){
+                total=$("#sp3").text().
+                 $("#s1,#s2,#s3").css("color","orangered")
+                   $("#s4,#s5").css("color","indigo")
+                $("textarea").val(total)
+
+            })
+
+            
+                 $("#s4").click(function(){
+                total=$("#sp4").text().
+                 $("#s1,#s2,#s3,#s4").css("color","orangered")
+                   $("#s5").css("color","indigo")
+                $("textarea").val(total)
+
+            })
+
+
+
+        })
+    </script>
+</head>
+<body>
+    <h1 class="text-capitalize text-center">Example of star rating using jquery </h1>
+    <div  class="container">
+        <div class="row">
+            <div class="col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                Rate Now
+                <br>                            
+
+                <span class=" fa fa-star" id="s1"></span>
+                  <span class=" fa fa-star" id="s2"></span>
+                    <span class=" fa fa-star" id="s3"></span>
+                      <span class=" fa fa-star" id="s4"></span>
+                        <span class= " fa fa-star" id="s5"></span>
+
+
+                <span class=" fa fa-star" id="sp1">1</span>
+                  <span class=" fa fa-star" id="sp2">2</span>
+                    <span class=" fa fa-star" id="sp3">3</span>
+                      <span class=" fa fa-star" id="sp4">4</span>
+                        <span class= " fa fa-star" id="sp5">5</span>
+
+                        <br>
+
+                        <h3 style="text-align: left; font-size: 25px;color: gray; margin: 10px 0;">Write Your Review</h3>
+                        <textarea name="" id="Review" style="height: 160px;" class="form-control my-4"></textarea>
+
+                        <input type="button" value="submit" class="btn btn-success form-control my-4">
+                
+         </div>
+                
+            </div>
+               <div class="col-sm-4"></div>
+        </div>
+
+    </div>
+</body>
+</html>

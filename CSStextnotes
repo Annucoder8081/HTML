@@ -1,0 +1,211 @@
+CSS Notes:
+----------
+css(Cascading Style Sheets)
+CSS stands for Cascading Style Sheets.
+It Not a programming language but a styling language
+Css is used to describe the style and presentation of Html document
+Remember for styling there must be some content That is why we studied HTML first
+
+Basic Syntax:
+--------------
+
+The syntax of Css has three Parts Selector Property Value
+
+selector
+----------{
+    property:value;
+}
+Example:
+h1{
+    color:red;
+}
+
+Here 'h1' is the selector 'color'the property and red is the value.
+
+Including Css in HTML:
+-----------------------
+
+There are 3 ways to include Css in HTML;
+
+1. Inline CSS:
+-------------------
+Style is written directly the tag using the 'style'a attribute.Example:<h1 style="color:red">Hello</h1>
+2. Internal Css:
+-------------------
+written in a separate file with .css extension and linked using <link> tag.
+Example:<link rel="stylesheet"href="style.css">
+
+Note: Inline style has the hightest priority than internal and then external.
+
+2. Exnternal Css:
+-------------------
+written in a separate file with .css extension and linked using <link> tag.
+Example:<link rel="stylesheet"href="style.css">
+
+Note: Inline style has the hightest priority than internal and then external.
+
+
+color Property
+---------------
+
+The 'color' proprty is used to set the text(foreground) color.
+Examples:
+color: red;
+color: pink;
+color: green;
+color: yellow;
+color: bule;
+
+Background Color Property
+------------------------------
+The background- color property is used to set the background color of an element
+Examle:
+Background color: red;
+Background color: pink;
+Background color: blue;
+Background color: green;
+
+Color System
+-------------
+
+There are diffrent ways to define colors in CSS
+
+RGB(Red,Green.Blue)
+Example:color: rgb(255,0,0)
+
+
+RGBA(Red Green blue Alpha/opacity):
+Example: color:rgba(255,0 ,0 ,0.5 )
+
+Hexadecimal (Base 16):
+Example:color:#ff0000;(red)
+
+
+Note we don t need to remember codes we can use online color pickers.
+
+slectors
+--------------
+
+selectors tell CSS which element to style,.
+
+Universal selector{}
+Element Selector{}
+Id Selector #myid{}
+Class Selector.my class{}
+
+Text proprties:
+-------------------
+
+text-algin:align text (left,right center justify)
+text-decoration: underline/overline/line-throught/none
+font-weight : normal/bold/lighter Or value -100-900
+font-family:arial roboto(multiple for fallback)
+
+ line-height:normal number,px (control spacing between line)
+ text-tranform: uppercase/lower/capitalize/none
+
+ Note: text-align works relative to the parent element not the whole page.
+
+ CSS
+ ----------
+
+ px(pixels): Most commonly used (96px=1inch)
+ %(percentage):Relative to parent element size
+ rem:Relative to the root (html)font size
+em: Reletive to the font size of the same element
+vh: /vw Relative to viewwport height/width
+
+Example:
+ 
+ button {font size:2em border-readius:1em}
+
+ Box Model
+
+ Every elememt is a box consisiting of :'
+ Contant padding Border-margin
+
+ height & width control the content  area size 
+ border :border 2px solid black;
+ Border readius 10px (rounded corners)50%(circle)
+ Padding spce inside border
+ Margin spae outside border
+
+ Shorthand padding 10px 20px 30px 40px (top right botton left) 
+
+ Display & Visibility
+ --------------------------
+
+ display: inline (only takes needed space)
+ display: block(take full width)
+ display: inline block(inline +margin & padding allow)
+ disp;ay:  none (removes element)
+
+ visibolity hidden (hides but keeps space reserved)
+
+ Note display:none and visibolity:hidden are diffrent
+
+
+ position
+ ----------
+
+ posotion: static(defult)
+ position: relative (relative positioned ancestor)
+ position: absolute(relative to nearest position ancestor)
+ position: fixed (relative to viewport)
+ position: stick(stick  based on scroll)
+
+z- ibdex:control which element appears on top (height= on top)
+
+
+
+ Background
+ --------------
+ Set an image as background:
+ background image:url("image.jpg");
+
+ Bckground size:
+   
+
+   cover (fill container may crop)
+
+   container(fits complety may leave space )
+   auto(orginal size)
+
+   flexbox
+   -----------
+
+   Flexbox is a one dimensional layout system
+   first set container: display: flex
+
+   Flex Contanier proprties:
+   flex direction: row| column|row-reverse| column-reverse
+   justfiy-content: flex-start|flex-end|center|space-between|space-evenly
+   align-item:flex-star|flex-end|center|stretch
+   flex-wrap: nowrap|wrap
+
+   flex item properties:
+   -align-self:overrid align-item for one item
+   -flex-grow:how much item grows
+   -flex-shrink:how much item shrink
+
+   Media Queries:
+   --------------
+
+   Media queries make website responsive
+   Example partice set;
+   width<300px div become green
+   300-400px  pink
+   400-600 red
+   above 600px blue
+
+   code:
+
+
+   @media(max-width:300px) {div{background:green;}}
+   @media(min-width;300px)and (max-width:400px){div{background:pink;}}
+   @media(min-width;300px)and (max-width:600px){div{background:red;}}
+   @media(min-width;300px){div{background:bule;}}
+
+     
+   
+   

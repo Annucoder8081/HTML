@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <style>
+    body {
+      background-color:yellowgreen; 
+    }
+    .form-container {
+      background:skyblue;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="form-container">
+      <h2>Student Registration Form</h2>
+      <form>
+
+        <div class="row g-3">
+          
+          <div class="col-sm-6">
+            <label class="form-label">Roll No.</label>
+            <input type="text" class="form-control" placeholder="Enter Roll No">
+          </div>
+
+          
+          <div class="col-sm-6">
+            <label class="form-label">Student Name</label>
+            <div class="row g-2">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="First Name">
+              </div>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Last Name">
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="col-sm-6">
+            <label class="form-label">Father's Name</label>
+            <input type="text" class="form-control" placeholder="Enter Father's Name">
+          </div>
+
+
+          <div class="col-sm-6">
+            <label class="form-label">Date of Birth</label>
+            <input type="Date" class="form-control" placeholder="Enter dob">
+          </div>
+
+          
+          <div class="col-sm-6">
+            <label class="form-label">Mobile No.</label>
+            <div class="input-group">
+              <span class="input-group-text">+91</span>
+              <input type="text" class="form-control" placeholder="Enter Mobile No">
+            </div>
+          </div>
+
+          
+          <div class="col-sm-6">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter Email">
+          </div>
+
+      
+          <div class="col-sm-6">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Enter Password">
+          </div>
+
+          
+          <div class="col-sm-6">
+            <label class="form-label">Gender</label>
+            <select class="form-select">
+              <option selected disabled>-- Select Gender --</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          
+          <div class="col-sm-12">
+            <label class="form-label">Department</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="CSE">
+              <label class="form-check-label">CSE</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="IT">
+              <label class="form-check-label">IT</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="ECE">
+              <label class="form-check-label">ECE</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="Civil">
+              <label class="form-check-label">Civil</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="Mech">
+              <label class="form-check-label">Mech</label>
+            </div>
+          </div>
+
+          
+          <div class="col-sm-12">
+            <label class="form-label">Course</label>
+            <select class="form-select">
+              <option selected disabled>-- Select Current Course --</option>
+              <option>Diploma</option>
+              <option>B.Tech</option>
+              <option>M.Tech</option>
+              <option>BA</option>
+              <option>MCA</option>
+              <option>ADCA</option>
+            </select>
+          </div>
+
+        
+          <div class="col-sm-6">
+            <label class="form-label">Student Photo</label>
+            <input type="file" class="form-control">
+          </div>
+
+          
+          <div class="col-sm-6">
+            <label class="form-label">City</label>
+            <input type="text" class="form-control" placeholder="Enter City">
+          </div>
+
+      
+          <div class="col-sm-12">
+            <label class="form-label">Address</label>
+            <textarea class="form-control" rows="3" placeholder="Enter Address"></textarea>
+          </div>
+
+          <div class="col-sm-12 text-center">
+            <button type="submit" class="btn btn-primary mt-3">Register</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

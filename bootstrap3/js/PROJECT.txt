@@ -1,0 +1,26 @@
+PROJECt:
+---------
+title/online shopping/tour travel/college/medical/sports
+---------------------------------------------------------
+WEB APPLICATIO:collection of dynamics pages.......(data base connect)
+WEBSITE:collection of static and dynamics web pages.
+    static + web app == website
+
+GENERAL ZONE:
+-------------
+Master Page:General header,general footer
+
+Home,About us,Gallery,Events,Registrations,Contact us ,Services,login
+
+USER ZONE:
+----------- 
+Master Page:User Header,User footer
+
+dashboard,My profile,complain,feedback,view notification,change password,logout
+
+ADMIN ZONE:
+-----------
+Master Page:Admin Header,Admin Footer.
+dashboard,view contact,view notifications,view feedback,view complain,response complain
+add notifications,change password,logout.
+	

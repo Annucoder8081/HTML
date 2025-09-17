@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="js/jquery.js"></script>
+
+    <script>
+         $(document).ready(function(){
+        $("#btn").click(function(){
+       var  rev=0;
+         n=parseInt($("#txt1").val());
+         var t=n ,r;
+             while(n!=0)
+           {
+              r=n%10; 
+              rev=rev*10+r;
+              n=parseInt(n/10);
+            }
+              if(t==rev){
+            $("#txt2").val(t +" palindrom number")
+           }else{
+             $("#txt2").val(t +" not palindrom number")
+           }
+            
+        })
+        })
+    </script>
+</head>
+<body>
+    <h1  class="text text-info text-center text-capitalize">Example of palindrom number  </h1>
+    <hr style="background-color: gray;height: 5px;">
+    <div class="row">
+        <div class="col-sm-12">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"
+    style="box-shadow: 0px 0px 10px 0px forestgreen;padding: 3%;">
+     Enter palindrom
+     <input type="text" class="form-control" id="txt1">
+     not palindrom
+     <input type="text" class="form-control" id="txt2">
+     <br>
+     <input type="button" class=" btn btn-danger" id="btn" value="click" >
+    </div>
+     <div class="col-sm-4"></div>
+    </div>
+    </div>
+</body>
+</html>
